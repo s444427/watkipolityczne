@@ -3,9 +3,7 @@ import * as React from 'react';
 
 // Project specific files
 import  {ThreadCard} from "./features/thread_card/thread_card";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 
 
 // CSS files
@@ -14,13 +12,11 @@ import Col from "react-bootstrap/Col";
 export const Thread = (props) => {
 
     return (
-        <Container style={{minWidth: "100%"}}>
-            <Row className="justify-content-md-center">
-                <Col sm={8}>
-                    <ThreadCard/>
-                </Col>
-            </Row>
-        </Container>
+        <div style={{height: "98vh", background: "gray"}}>
+            <div style={{background: "white"}}>
+                <ThreadCard/>
+            </div>
+        </div>
     );
 }
 
